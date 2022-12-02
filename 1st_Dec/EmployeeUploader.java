@@ -77,6 +77,19 @@ public class EmployeeUploader {
 		ResultSet rs= stmt.executeQuery("select employeee.ee_name,department.d_name,department.d_head  from department,employeee where department.d_id="+dd_id);
 		while(rs.next()) {
 			System.out.println(rs.getString(1)+" "+rs.getString(2)+" "+rs.getString(3));
+			if((d_id==ee_id) || (d_name==ee_name)){
+	throw new DuplicateDataException("employee already exists");
+	}
+	if(ee_salary<1000) {
+		throw new LessSalaryAmountException("salary cannot be less than 1000");
+	}
+	if(d_id==0) {
+		throw new DepartmentNotFoundException("department does not exists");
+	}
+	
+	System.out.println("successfully inserted");
+	
+	}
 		
 		}}
 	public void storeDepartmentdetails() throws SQLException{
