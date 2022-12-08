@@ -7,7 +7,7 @@ public class Book {
 	private String author;
 	private String category;
 	private float price;
-	// Declaring parameterized constructor
+	// Declaring parameterized constructor for all the variables 
 	public Book(String bookId, String title, String author, String category, float price) {
 		super();
 		this.bookId = bookId;
@@ -16,7 +16,7 @@ public class Book {
 		this.category = category;
 		this.price = price;
 	}
-	// getters and setters for allthe variables
+	// getters and setters for allthe variables like price, category, author, title,bookid
 	public String getBookId() {
 		return bookId;
 	}
