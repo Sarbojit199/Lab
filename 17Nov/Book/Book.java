@@ -39,7 +39,7 @@ public class Book {
 				return true;
 			} else {
 				
-				throw new InvalidBookException("Invalid Data...");
+				throw new InvalidBookException("Invalid ");
 			}
 			
 		}
