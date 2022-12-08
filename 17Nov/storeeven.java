@@ -13,6 +13,7 @@ package Collections;
 
 import java.util.ArrayList;
 public class storeeven {
+	//make arraylist for store even number
 		ArrayList<Integer> list1 = new ArrayList<Integer>();		//creating array list of type integer
 		public ArrayList<Integer> saveEvenNumber(int N){			//methods to print even number
 			for(int i=0;i<=N;i++) {									//for loop to iterate
@@ -20,6 +21,7 @@ public class storeeven {
 			}
 			return list1;									//return the list
 		}
+	//method to multiply even number by 2
 		ArrayList<Integer> newlist = new ArrayList <Integer>();
 		 public ArrayList<Integer> printeven(){					//method to print new list 
 			 for(int item: list1) {								//traversing the list
@@ -28,6 +30,7 @@ public class storeeven {
 				 }
 			 return newlist;
 		 }
+	//method to get all values
 		 public void retrivevalue(int find) {
 			 if(newlist.contains(find)) {					//check if the new list contains the element
 					System.out.print("element is present in the arraylist");
