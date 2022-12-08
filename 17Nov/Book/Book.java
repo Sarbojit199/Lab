@@ -33,12 +33,14 @@ public class Book {
 	public float getPrice() {
 		return price;
 	}
+
+//validation for category whether it should be sci, fiction etc..
 		public boolean validation() throws Exception {
 			if(category == "Science" || category == "Fiction" || category == "Technology" || category == "Others" && price > 0 &&
 					bookId.startsWith("B") && bookId.length() <= 4) {
 				return true;
 			} else {
-				
+				//If wrong then invalid exception
 				throw new InvalidBookException("Invalid ");
 			}
 			
